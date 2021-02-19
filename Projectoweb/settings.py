@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ProjectoWebApp',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'Projectoweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/crhistian/Documentos/proyectos propios/djangoTutorial/Projectoweb/ProjectoWebApp/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
