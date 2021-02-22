@@ -120,3 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'#importante!!! base de las rutas para las imagenes
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')#declaracion de las rutas para las imagenes, luego hay que indicarla en el archivo de rutas del projectos
