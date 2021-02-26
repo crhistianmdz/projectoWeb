@@ -13,6 +13,7 @@
           <h2 class="section-heading mb-4" >
             <span class="section-heading-upper">{{post.titulo}}</span>
           </h2>
+          <p class="mb-4">{{post.categorias.nombre}}</p>
           <p class="mb-3">{{post.contenido}}</p>
           <div style="text-align:left;">
             <p class="mb-4">Autor: {{post.autor}}</p>
@@ -27,10 +28,10 @@
     <section class="page-section clearfix text-white">
       <div class="container">
         <div class="intro text-center">
-        Categorias: 
+        Categorias:
           {% for post in posts%}
             {% for categoria in post.categorias.all %}
-              <a class="text-light text-underline" href="categoria/{{categoria.id}}">{{categoria.nombre}}</a>&nbsp;
+              {{categoria.nombre}}&nbsp;
             {%endfor%}
           {%endfor%}
         </div>

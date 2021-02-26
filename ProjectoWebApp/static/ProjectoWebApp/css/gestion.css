@@ -281,3 +281,18 @@ ul.errorlist{
   height: 50%!important ;
   width: 50%  !important;
 }
+.text-underline{
+  text-decoration: underline !important;
+}
+.text-underline:hover{
+  text-decoration: none !important;
+}
+.form-contact>div{
+  background-color: rgba(24, 64, 8, 0.8);
+  padding: 3% 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+}

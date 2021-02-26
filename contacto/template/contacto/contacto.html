@@ -1,0 +1,20 @@
+{% extends "ProjectoWebApp/template/ProjectoWebApp/base.html" %}
+
+{% load static %}
+
+  {% block content %}
+  <section class="clearfix page-section text-white">
+    <div class="container">
+      <div class="form-contact text-center">
+          <div>
+            <form action="" method="post">{% csrf_token %}
+              <table class='text-white'>
+                {{miformulario.as_table}}
+              </table><br>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
